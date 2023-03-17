@@ -3,15 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>com.huntly</groupId>
         <artifactId>integrated</artifactId>
         <version>${revision}</version>
     </parent>
-    
+
     <artifactId>huntly-server</artifactId>
-    
+
     <name>huntly-server</name>
     <description>huntly api server</description>
 
@@ -21,11 +21,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <frontend-src-dir>../../client</frontend-src-dir>
-        <node.version>v18.7.0</node.version>
+        <node.version>v18.12.1</node.version>
         <yarn.version>v1.22.19</yarn.version>
         <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>com.huntly</groupId>
@@ -159,7 +159,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
